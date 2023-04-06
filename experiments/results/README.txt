@@ -1,0 +1,1 @@
+Content of this directory can be downloaded from releases.

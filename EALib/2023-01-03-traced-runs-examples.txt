@@ -1,0 +1,6 @@
+python run_ecga_trap_traced.py traced-run-example 0 50 instances/trap__l_50__k_5.txt 42 6 expensive-ones ga-subfunction-sync 4 50 500 8
+python run_ecga_trap_traced.py traced-run-example 1 50 instances/trap__l_50__k_5.txt 42 6 expensive-ones ga-subfunction-async 4 50 500 8
+python run_ecga_trap_traced.py traced-run-example 0 50 instances/trap__l_50__k_5.txt 42 6 expensive-ones ga-subfunction-sync 4 50 8 8
+python run_ecga_trap_traced.py traced-run-example 1 50 instances/trap__l_50__k_5.txt 42 6 expensive-ones ga-subfunction-async 4 50 8 8
+python run_ecga_trap_traced.py traced-run-example 2 50 instances/trap__l_50__k_5.txt 42 6 expensive-ones-100 ga-subfunction-sync 4 50 8 8
+python run_ecga_trap_traced.py traced-run-example 3 50 instances/trap__l_50__k_5.txt 42 6 expensive-ones-100 ga-subfunction-async 4 50 8 8

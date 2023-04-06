@@ -1,0 +1,16 @@
+[package]
+name = "fast_temporal_processor"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.56"
+clap = { version = "3.1.8", features = ["derive"] }
+itertools = "0.10.3"
+mimalloc = "0.1.28"
+polars = { version = "0.20.0", features = ["ipc", "decompress", "lazy"] }
+
+[profile.release]
+debug = 1

@@ -1,0 +1,55 @@
+[tool.poetry]
+name = "2022-03-11 - initial experiment on the impact of temporal biases on ecga"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+numpy = "^1.21"
+pandas = "^1.4.1"
+bokeh = "^2.4.2"
+tqdm = "^4.63.0"
+polars = "^0.13.16"
+pyarrow = "^7.0.0"
+matplotlib = "^3.5.2"
+scipy = "^1.8.1"
+nasbench301 = "^0.3"
+ConfigSpace = "^0.6.0"
+seaborn = "^0.12.0"
+scikit-learn = "^1.1.2"
+networkx = "^2.8.7"
+xgboost = "^1.6.2"
+torch = {version = "^1.12.1", source = "pypi"}
+torchvision = {version = "^0.13.1", source = "pypi"}
+torch-scatter = {version = "^2.0.9", source = "torchgeom"}
+torch-sparse = {version = "^0.6.15", source = "torchgeom"}
+torch-cluster = {version = "^1.6.0", source = "torchgeom"}
+torch-spline-conv = {version = "^1.2.1", source = "torchgeom"}
+torch-geometric = "^2.1.0.post1"
+pathvalidate = "^2.5.2"
+h5py = "^3.7.0"
+lightgbm = "^3.3.3"
+openpyxl = "^3.0.10"
+
+[tool.poetry.dev-dependencies]
+black = {version = "^22.1.0", allow-prereleases = true}
+ipykernel = "^6.9.2"
+rpy2 = "^3.4.5"
+
+[[tool.poetry.source]]
+name = "torchgeom"
+url = "https://data.pyg.org/whl/torch-1.12.1+cpu.html"
+default = false
+secondary = true
+
+
+[[tool.poetry.source]]
+name = "torch"
+url = "https://download.pytorch.org/whl/cpu"
+default = false
+secondary = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

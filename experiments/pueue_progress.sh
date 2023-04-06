@@ -1,0 +1,1 @@
+pueue status -j | jq -s "[.[] | .tasks | .[] | {id: .id, status: (.status | tostring)}] | group_by(.status) | map({Status: .[0].status, Count: length, Elements: [.[].id] | tostring})"

@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'fast_temporal_processor'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=fast_temporal_processor",
+                    "--package=fast_temporal_processor"
+                ],
+                "filter": {
+                    "name": "fast_temporal_processor",
+                    "kind": "bin"
+                }
+            },
+            "args": ["trace.ipc"],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'fast_temporal_processor'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=fast_temporal_processor",
+                    "--package=fast_temporal_processor"
+                ],
+                "filter": {
+                    "name": "fast_temporal_processor",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

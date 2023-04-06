@@ -1,0 +1,9 @@
+# Can be large and is automatically generated.
+runs.txt
+*.xlsx
+*.ipc
+*.jpg
+*.png
+*.pdf
+*.eps
+*.svg

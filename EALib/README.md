@@ -51,3 +51,12 @@ python -m build .
 Requires [`doxygen`](https://www.doxygen.nl/download.html), [`sphinx`](https://www.sphinx-doc.org), [`breathe`](https://github.com/michaeljones/breathe) and [`sphinx-rtd-theme`](https://pypi.org/project/sphinx-rtd-theme/).
 
 Once set up, ensure that ensure that the build was configured to generate the documentation, e.g. using `meson configure -C build -Dbuild_doc=true` or providing the argument during the creation of the initial build directory. Generating/updating the documentation can be performed through `ninja -C build docs`.
+
+# Credit
+ DAEDALUS – Distributed and Automated Evolutionary Deep Architecture Learning with Unprecedented Scalability
+
+This research code was developed as part of the research programme Open Technology Programme with project number 18373, which was financed by the Dutch Research Council (NWO), Elekta, and Ortec Logiqcare.
+
+Project leaders: Peter A.N. Bosman, Tanja Alderliesten
+Researchers: Alex Chebykin, Arthur Guijt, Vangelis Kostoulas
+Main code developer: Arthur Guijt
